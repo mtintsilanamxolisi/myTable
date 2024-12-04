@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyID - Secure Your Identity</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">MyID</div>
+        <ul class="nav-links">
+            <li><a href="./partner.html">Business</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./register.html">Register</a></li>
+        </ul>
+        <a href="./login.html" class="login-button">Login</a>
+    </nav>
+
+
+ <!-- Hero Section -->
+ <section class="hero">
+    <h1>Join MyID Business Network</h1>
+    <p>Ensure secure transactions for your customers by safeguarding their identity.</p>
+</section>
+
+<!-- Info Cards for Business Benefits -->
+<section class="benefits">
+    <div class="info-cards">
+        <div class="info-card">
+            <img src="icon-security.png" alt="Security Icon">
+            <h3>Improve Identity Security</h3>
+            <p>Protect your customers' identities by ensuring only verified transactions.</p>
+        </div>
+        <div class="info-card">
+            <img src="icon-trust.png" alt="Trust Icon">
+            <h3>Build Trust with Customers</h3>
+            <p>Being a part of MyID enhances customer trust and strengthens your reputation.</p>
+        </div>
+        <div class="info-card">
+            <img src="icon-growth.png" alt="Growth Icon">
+            <h3>Grow Your Business</h3>
+            <p>Reach more customers by being part of our trusted network of businesses.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Advanced Business Registration Form -->
+<section class="business-form">
+    <h2>Register Your Business</h2>
+    <form id="business-registration" action="#" method="POST" enctype="multipart/form-data">
+        <!-- Business Information -->
+        <label for="business-name">Business Name:</label>
+        <input type="text" id="business-name" name="business-name" required>
+
+        <label for="reg-number">Registration Number:</label>
+        <input type="text" id="reg-number" name="reg-number" required>
+
+        <label for="ncr-number">NCR Business Number:</label>
+        <input type="text" id="ncr-number" name="ncr-number" required>
+
+        <label for="ncr-certificate">Upload NCR Certificate (Certified):</label>
+        <input type="file" id="ncr-certificate" name="ncr-certificate" required>
+
+        <!-- Store/Branch Information -->
+        <label for="branches">Number of Stores/Branches:</label>
+        <select id="branches" name="branches" onchange="toggleBranchesInput()">
+            <option value="1">1 Store</option>
+            <option value="multiple">Multiple Branches</option>
+        </select>
+
+        <!-- Hidden input for multiple branches -->
+        <div id="branch-count" style="display: none;">
+            <label for="branch-number">How many branches?</label>
+            <input type="number" id="branch-number" name="branch-number">
+        </div>
+
+        <!-- Industry Selection -->
+        <label for="industry">Industry:</label>
+        <select id="industry" name="industry" multiple>
+            <option value="credit">Credit Facilities</option>
+            <option value="funeral">Funeral Cover</option>
+            <option value="insurance">Insurance</option>
+            <option value="retail">Retail Stores</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="business-logo">Upload Business Logo:</label>
+        <input type="file" id="business-logo" name="business-logo" required>
+
+        <!-- Contact Information -->
+        <label for="contact-name">Contact Person (Manager):</label>
+        <input type="text" id="contact-name" name="contact-name" required>
+
+        <label for="contact-number">Business Contact Number:</label>
+        <input type="tel" id="contact-number" name="contact-number" required>
+
+        <!-- Password Creation -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+        <button type="submit">Register Business</button>
+    </form>
+</section>
+
+
+
+ <!-- Hero Section -->
+ <section class="hero-section">
+    <h1>Terms and Conditions</h1>
+    <p>Your rights, data protection, and our policies.</p>
+</section>
+
+<!-- Terms and Conditions Content -->
+<section class="terms-content">
+    <div class="container">
+        <h2>Our Commitment to Protect Your Data</h2>
+        <p>At MyID, we take your privacy seriously. We guarantee that all your submitted data will be securely stored and will only be shared with law enforcement authorities if it is implicated in identity fraud, illegal transactions, or other legal issues...</p>
+        
+        <!-- More terms go here -->
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="./partner.html">Register NCR Business</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./register.html">User Register</a></li>
+        </ul>
+        <p>&copy; 2024 MyID. All rights reserved.</p>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

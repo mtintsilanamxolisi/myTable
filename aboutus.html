@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTable - Easy Restaurant Table Management</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ 
+      <!-- Navbar -->
+<header>
+    
+    <div class="navbar1">
+        <div class="logo">myTable</div>
+        <ul class="links">
+            <li><a href="./register.html">Waitstaff Signup</a></li>
+
+            <li><a href="./partner.html">Register Restaurant</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          
+        </ul>
+        <a href="./login.html" class="loginbtn">Login</a>
+        <div class="togglebtn1">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+       
+    </div>
+
+    <div class="dropdown_menu">
+        '
+            <li><a href="./register.html">Waitstaff Signup</a></li>
+
+            <li><a href="./partner.html">Register Restaurant</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./login.html" class="loginbtn">Login</a></li>
+
+    </div>
+    
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #2A2E72, #3B7DD8, #9CAFFD);;">
+        <div class="hero-content">
+            <h1>Easy Restaurant Table Management</h1>
+            <p>Streamline your waitstaff operations with our modern, mobile-friendly app designed to make table management, billing, and group orders a breeze.</p>
+         
+        </div>
+        <div class="hero-image">
+            <!-- Add a warm-tone vector image related to security -->
+            <img class="heropic" src="./newassets/rb_2148535013.png" width="500px" alt="ID Security Illustration">
+        </div>
+    </section>
+
+    
+ <!-- About Us Hero Section -->
+ 
+
+
+<!-- Mission & Vision Cards Section -->
+<section class="mission-vision-section">
+    <div class="container">
+        <div class="mission-card">
+            <h3>About Us</h3>
+            <p>At myTable, we are passionate about making restaurant operations smoother and more efficient. Our service is designed to empower waitstaff with modern tools that eliminate the stress of managing large groups, splitting bills, and tracking individual payments.</p>
+        </div>
+        <div class="mission-card">
+            <h3>Our Mission</h3>
+            <p>To simplify table management for waitstaff, creating a seamless dining experience for both staff and customers by removing the complexity of bill splitting and payment tracking.</p>
+        </div>
+
+        <div class="mission-card">
+            <h3>Our Vision</h3>
+            <p>To become the go-to solution for restaurants nationwide, fostering a positive environment where waitstaff confidently handle any table size with ease, ensuring customer satisfaction every time.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mission-card">
+            <h3>Why We Created myTable</h3>
+            <p>The idea for myTable was born after witnessing the challenges waitstaff face when serving large groups. Calculating bills and splitting them among customers often leads to lengthy processes, unnecessary debates, and even mistakes. Many waitstaff struggle with or avoid large groups because of the difficulties associated with individual payment tracking systems.
+
+                We created myTable to ease these challenges, allowing waitstaff to focus on what they do best—providing excellent service. By simplifying table and bill management, we aim to improve efficiency, reduce stress, and enhance the overall dining experience for everyone involved.</p>
+        </div>
+
+      
+    </div>
+</section>
+
+
+<!-- Section: Upcoming Features -->
+
+<!-- Section: Upcoming Features -->
+
+
+
+<!-- Registration Section -->
+<section class="registration" id="register">
+    <h2>Sign Up for MyTable</h2>
+    <p>Effortless Table Management for Restaurants That Increases and Simplifies Productivity.</p>
+    <div class="register-options">
+        <a href="./register.html" class="cta-button">Waitstaff Registration</a>
+        <a href="./partner.html" class="cta-button">Restaurant Registration</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <ul class="footer-links">
+        <li><a href="./register.html">Waitstaff Signup</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./partner.html">Restaurant Signup</a></li>
+    </ul>
+    <p>&copy; 2024 MyTable. All rights reserved.</p>
+</footer>
+
+
+    
+<script>
+    const toggleBtn = document.querySelector('.togglebtn1')
+    const toggleBtnIcon = document.querySelector('.togglebtn1 i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtnIcon.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+
+        toggleBtn.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+
+</script>
+    
+</body>
+</html>

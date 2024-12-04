@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyID Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID">
+
+</head>
+<body>
+    <!-- HEADER NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">MyID</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Monitor My ID</a></li>
+                <li><a href="#">Transaction History</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SIDEBAR AND MAIN CONTENT -->
+    <div class="dashboard-container">
+        <!-- Side Nav -->
+        <aside class="sidenav">
+            <ul class="sidenav-menu">
+                <li>
+                    <a href="profile.html" class="sidenav-link">
+                        <i class="fas fa-user"></i> Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="account.html" class="sidenav-link">
+                        <i class="fas fa-cog"></i> Account Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="id-verification.html" class="sidenav-link">
+                        <i class="fas fa-id-card"></i> ID Verification
+                    </a>
+                </li>
+                <li>
+                    <a href="transaction-history.html" class="sidenav-link">
+                        <i class="fas fa-history"></i> Transaction History
+                    </a>
+                </li>
+                <li>
+                    <a href="fraud-reporting.html" class="sidenav-link">
+                        <i class="fas fa-exclamation-triangle"></i> Fraud Reporting
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="dashboard-section">
+                <h1>Welcome to MyID Dashboard</h1>
+                <p>Select an option from the sidebar to manage your profile, monitor your ID, view transactions, or adjust settings.</p>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
